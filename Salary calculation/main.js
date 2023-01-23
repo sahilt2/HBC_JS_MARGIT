@@ -12,4 +12,5 @@ function salaryCal() {
     }
     }
 
-salaryCal()
+salaryCal();
+
