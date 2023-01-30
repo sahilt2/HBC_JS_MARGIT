@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasoline-Price</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Gasoline Price Calculator</h1>
+    </div>
+    <main class="container">    <!-- it's not necessary to use form here, if used ,button type submit might have issues -->
+        <form action="#">
+            <div class="form_group"> 
+            <label for="price">Price</label>
+            <input type="number" id="price">
+        </div>
+        <div class="form_group">
+            <label for="money">Money</label>
+            <input type="number" id="money">
+        </div>
+      
+           
+        </form>
+        <button onclick="calcGasoline()">Calculate</button>
+    </main>
+   
+        <p id="answer"></p>
+
+        <div>
+            <h1>Temperature Converter</h1>
+        </div>
+        <main>
+            <form action="#">
+                <div class="newlabel">
+                    <label for="celcius">Celcius</label>                  <!-- onChange, onInput -->
+                    <input type="number" id="celcius" oninput="tempCon()" onchange="tempCon()" value="tempCon()">
+                </div>
+                <div class="newlabel">
+                    <label for="fahrenheit">Fahrenheit</label>
+                    <input type="number" id="fahrenheit" oninput="tempCon()" onchange="tempCon()">
+                </div>
+                <div class="newlabel">
+                    <label for="kelvin">Kelvin</label>
+                    <input type="number" id="kelvin" oninput="tempCon()" onchange="tempCon()">
+                </div>
+<!-- this.id is id of input -->
+            </form>
+        </main>
+   
+    <script src="main.js"></script>
+</body>
+</html>

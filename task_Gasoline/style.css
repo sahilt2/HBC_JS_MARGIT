@@ -1,0 +1,65 @@
+body {
+    background-color: antiquewhite;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 40%;
+    color:brown
+}
+
+.container {
+    background-color: cadetblue;
+    margin-left: 40%;
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+    
+}
+form {
+    margin: 10px;
+    padding: 10px;
+   
+}
+
+
+input, button{
+    font-family: inherit;
+    padding: 5px;
+    font-size: 14px;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 20px 0;
+    margin-left: 20px;
+    background-color: green;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #cd2020f0;
+}
+
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+.form_group{
+    margin: 10px 0;
+}
+
+#answer {
+    margin-left: 40%;
+}
+
+.newlabel{
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+}
