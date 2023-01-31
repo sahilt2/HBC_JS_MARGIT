@@ -57,6 +57,14 @@ label {
 #answer {
     margin-left: 40%;
 }
+.tempcontent{
+    background-color: cadetblue;
+    margin-left: 40%;
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+
+}
 
 .newlabel{
     display: block;

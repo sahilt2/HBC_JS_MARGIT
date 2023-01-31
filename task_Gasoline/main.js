@@ -32,37 +32,51 @@ const calcGasoline=()=>{              //modern ways to indicate money, + changes
     console.log(money) */
 
 }
-calcGasoline();
 
-const tempCon=()=>{
-    const celInput = +document.querySelector('#celcius').value;
-    const fahInput = +document.querySelector('#fahrenheit').value;
-    const kelInput = +document.querySelector('#kelvin').value;
-/* 
-  
+const tempCon=(id,value)=>{
+    const celInput = document.querySelector('#celcius');
+    const fahInput = document.querySelector('#fahrenheit');
+    const kelInput = document.querySelector('#kelvin');
+    const val=parseFloat(value);         //converting into number
 
 
+    if (id==='celcius'){
+    fahInput.value=(val*1.8+32).toFixed(2);         //toFixed is used to show how many numbers after comma
+    kelInput.value=(val+273.15).toFixed(2);
+    }
+
+    if (id==='fahrenheit'){
+        celInput.value=((val-32)*(5/9)).toFixed(2);
+        kelInput.value=((val-32)*(5/9) + 273.15).toFixed(2);
+    }
+    if (id==='kelvin'){
+        celInput.value=(val-273.15).toFixed(2);
+        fahInput.value=((val-273.15)*(9/5) + 32).toFixed(2);
+    }
 
 
 
 
-   
+
+  /*   celInput= (fahInput-32)*5/9 ;
+    celcius.textContent=celInput; */
 
 
 
-    
 
+
+    /* 
     console.log(celInput);
     console.log(fahInput);
  
    /*  console.log(kelvin); */
-/*     console.log(this.id) */
+  /*   console.log(id,value) */
     
 
 
 
 }
-tempCon();
+
 
     /*  let fOutput=celcius*(9/5)+32;
         let kOutput=celcius+273.15
@@ -71,3 +85,10 @@ tempCon();
   /*  let cOutput= (fahrenheit-32)*5/9;
         let kOutput= ((fahrenheit-32)*5/9)+273.15;
     } */
+
+/* Celsius to Kelvin: K = C + 273.15
+Kelvin to Celcius: C = K - 273.15
+Fahrenheit to Celcius: C = (F-32) (5/9)
+Celsius to Fahrenheit: F = C(9/5) + 32
+Fahrenheit to Kelvin: K = (F-32) (5/9) + 273.15
+Kelvin to Fahrenheit: F = (K-273.15) (9/5) + 32 */

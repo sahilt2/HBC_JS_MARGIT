@@ -32,19 +32,19 @@
         <div>
             <h1>Temperature Converter</h1>
         </div>
-        <main>
+        <main class="tempcontent">
             <form action="#">
                 <div class="newlabel">
                     <label for="celcius">Celcius</label>                  <!-- onChange, onInput -->
-                    <input type="number" id="celcius" oninput="tempCon()" onchange="tempCon()" value="tempCon()">
+                    <input type="number" id="celcius" oninput="tempCon(this.id,this.value)" onchange="tempCon(this.id)">
                 </div>
                 <div class="newlabel">
                     <label for="fahrenheit">Fahrenheit</label>
-                    <input type="number" id="fahrenheit" oninput="tempCon()" onchange="tempCon()">
+                    <input type="number" id="fahrenheit" oninput="tempCon(this.id,this.value)" onchange="tempCon(this.id)">
                 </div>
                 <div class="newlabel">
                     <label for="kelvin">Kelvin</label>
-                    <input type="number" id="kelvin" oninput="tempCon()" onchange="tempCon()">
+                    <input type="number" id="kelvin" oninput="tempCon(this.id,this.value)" onchange="tempCon(this.id)">
                 </div>
 <!-- this.id is id of input -->
             </form>
