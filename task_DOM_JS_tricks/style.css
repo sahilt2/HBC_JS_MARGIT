@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*   overscroll-behavior: none; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: linear-gradient(to right, #5dbcc5, #567687);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+header,
+section,
+footer {
+  padding: 1rem;
+}
+.bg {
+  background: black;
+  padding: 0.5rem;
+}
+.bg h1 {
+  font-size: 1rem;
+}
+.mobile {
+  display: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+nav ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  min-height: 75vh;
+  scroll-margin-top: 5rem;
+}
+
+section:first-child,
+header {
+  background-image: linear-gradient(to right, #3e8086, #58656c);
+}
+section:nth-child(2) {
+  background-image: linear-gradient(to right, #21484b, #495860);
+}
+section:last-child {
+  background-image: linear-gradient(to right, #162e31, #2f393f);
+}
+
+footer {
+  background-color: black;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 0.5rem;
+}
+#backToTop {
+  display: none; /* to not display the button on default */
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+/* overlay modal */
+.overlay {
+  background-color: rgba(51, 51, 51, 0.485);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.overlay.visible {
+  display: flex;
+}
+.modal {
+  background-color: aliceblue;
+  color: black;
+  height: 50vh;
+  width: 75vh;
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
+}
+.modal button {
+  background-color: red;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  ul.responsive {
+    display: block;
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+  }
+  ul.responsive li {
+    display: block;
+    margin: 1rem;
+  }
+}
