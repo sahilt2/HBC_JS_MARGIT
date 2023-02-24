@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #2a9d8f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar div h1 {
+  color: #e9c46a;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#hero-banner {
+  background: url(pics/backgroundpizza.jpg) no-repeat center center/cover;
+  height: 75vh;
+  background-attachment: fixed;
+  display: flex;
+}
+main {
+  display: flex;
+
+  margin: 1rem;
+}
+form {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: bisque;
+  /*  width: 66vw; */
+  border-radius: 5px;
+}
+form p {
+  margin: 1rem 0;
+}
+form label {
+  margin-top: 1rem;
+}
+.size {
+  margin-top: 1rem;
+}
+.size input {
+  margin-top: 1rem;
+}
+/* .container {
+  display: flex;
+} */
+
+section h2 {
+  color: #e9c46a;
+  background-color: #2a9d8f;
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 14pt;
+}
+.container img {
+  width: 300px;
+  height: 365px;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.checkout {
+  display: flex;
+}
+
+#finalprice {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #2a9d8f;
+  width: auto;
+  height: 300px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#finalprice p {
+  color: white;
+  font-size: 10pt;
+  padding: 1rem;
+}
+input {
+  font-family: inherit;
+}

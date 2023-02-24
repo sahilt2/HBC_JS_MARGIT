@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <h1>Sahil's Pizzeria</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero-banner"></section>
+
+    <section>
+      <h2>CREATE YOUR OWN PIZZA</h2>
+    </section>
+    <main>
+      <section class="container">
+        <img src="pics/displaypizza.jpg" alt="pizza in pan" />
+      </section>
+      <section>
+        <form action="#">
+          <section class="size">
+            <div>
+              <label for="name">Please enter your name</label>
+              <input type="text" id="name" placeholder="type your name" />
+            </div>
+            <p>Please select a size</p>
+            <div>
+              <label for="twocm">2 cm</label>
+              <input type="radio" id="twocm" name="size" value="2" />
+            </div>
+            <div>
+              <label for="fourcm">4 cm</label>
+              <input type="radio" id="fourcm" name="size" value="4" />
+            </div>
+            <div>
+              <label for="sixcm">6 cm</label>
+              <input type="radio" id="sixcm" name="size" value="6" />
+            </div>
+            <div>
+              <label for="eightcm">8 cm</label>
+              <input type="radio" id="eightcm" name="size" value="8" />
+            </div>
+          </section>
+
+          <section class="topping-field">
+            <p>
+              You can choose first four toppings for free and after that it will
+              cost 0,5€ for each.
+            </p>
+            <div>
+              <input type="checkbox" id="pepperoni" value="pepperoni" />
+              <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
+              <input type="checkbox" id="mushrooms" value="mushrooms" />
+              <label for="mushrooms">Mushrooms</label>
+            </div>
+            <div>
+              <input type="checkbox" id="bacon" value="bacon" />
+              <label for="bacon">Bacon</label>
+            </div>
+            <div>
+              <input type="checkbox" id="onions" value="onions" />
+              <label for="onions">Onions</label>
+            </div>
+            <div>
+              <input type="checkbox" id="chicken" value="chicken" />
+              <label for="chicken">Chicken</label>
+            </div>
+            <div>
+              <input type="checkbox" id="blackolives" value="blackolives" />
+              <label for="blackolives">Black Olives</label>
+            </div>
+            <div>
+              <input type="checkbox" id="ham" value="ham" />
+              <label for="ham">Ham</label>
+            </div>
+            <div>
+              <input type="checkbox" id="extracheese" value="extracheese" />
+              <label for="extracheese">Extra cheese</label>
+            </div>
+            <div>
+              <input type="checkbox" id="sausage" value="sausage" />
+              <label for="sausage">Sausage</label>
+            </div>
+            <div>
+              <input type="checkbox" id="tomato" value="tomato" />
+              <label for="tomato">Tomato</label>
+            </div>
+            <p>Where would you like to eat?</p>
+            <select name="eat-option" id="eat-option">
+              <option selected disabled value="none">
+                Select delivery method:
+              </option>
+              <option value="home">Home delivery, +5€</option>
+              <option value="eat in">Eat in</option>
+              <option value="pickup">Pick up</option>
+            </select>
+          </section>
+        </form>
+      </section>
+      <sectionclass="checkout">
+        <div id="finalprice">
+          <p>Name:<span id="order-name"></span></p>
+          <p>Size:<span id="order-size"></span></p>
+          <p>Toppings:<span id="order-toppings"></span></p>
+          <p>Delivery:<span id="order-delivery"></span></p>
+          <p>Total price:<span id="order-price"></span></p>
+        </div>
+      </section>
+    </main>
+  
+
+    <script src="main.js"></script>
+  </body>
+</html>
