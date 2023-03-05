@@ -6,7 +6,8 @@ const overlay = document.querySelector('.overlay')
 const scoreUpdate = document.querySelector('#score')
 const modalScore = document.querySelector('.scoreEnd')
 const endText = document.querySelector('#endText')
-const audio = new Audio('mixkit-game-click-1114.mp3')
+const audioClick = new Audio('mixkit-game-click-1114.mp3')
+const audioEnd = new Audio('failfare-86009.mp3')
 let score = 0
 let speed = 1000
 let active = 0
@@ -15,7 +16,10 @@ let miss = 0
 
 const getRndInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 const playSound = () => {
-  audio.play()
+  audioClick.play()
+}
+const playSoundEnd = () => {
+  audioEnd.play()
 }
 
 const clickCircle = (i) => {
@@ -88,6 +92,7 @@ const endGame = () => {
     endText.textContent = 'Insane!!! You are a savior of this planet.'
   }
   console.log('game ended')
+  playSoundEnd()
 }
 const resetGame = () => {
   window.location.reload()
